@@ -26,7 +26,21 @@
 + 声卡
 
 ## 未解决
-+ 睡眠唤醒后触摸板和USB有时候不正常
+~~+ 睡眠唤醒后触摸板和USB有时候不正常~~
+
+系统默认S3睡眠，改成S0就可以正常睡眠唤醒，就是耗电一点，数据存在内存里
+```
+sudo pmset -a hibernatemode 0
+sudo pmset -a proximitywake 0
+sudo pmset -a standbydelayhigh 0
+sudo pmset -a ttyskeepawake 0   
+sudo pmset -a gpuswitch 0    
+sudo pmset -a halfdim 0  
+sudo pmset -a womp 0      
+sudo pmset -a acwake 0
+sudo pmset -a networkoversleep 0
+sudo pmset -a tcpkeepalive 0
+```
 
 ## 截图
 ![](https://github.com/pangzhen/ThinkPad-E14-Hackintosh/blob/main/PNG/system.png)
