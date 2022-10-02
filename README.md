@@ -39,6 +39,7 @@ sudo pmset -a halfdim 0
 sudo pmset -a womp 0      
 sudo pmset -a acwake 0
 sudo pmset -a networkoversleep 0
+sudo pmset -a tcpkeepalive 0
 ```
 
 ## 截图
